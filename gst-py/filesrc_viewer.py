@@ -6,6 +6,8 @@ gi.require_version("GstVideo", "1.0")
 from gi.repository import Gst, Gtk, GstVideo
 from gst_pipeline import GstPipeline
 
+from pprint import pprint
+
 class FilesrcViewer(GstPipeline):
     def __init__(self):
         super().__init__("Filesrc-Viewer")
@@ -17,17 +19,15 @@ class FilesrcViewer(GstPipeline):
         self.window.set_title("Filesrc-Viewer")
         self.window.set_default_size(500, 400)
         self.window.connect("destroy", Gtk.main_quit, "WM destroy")
-        vbox_layout = Gtk.VBox()
-        self.window.add(vbox_layout)
+        self.vbox_layout = Gtk.VBox()
+        self.window.add(self.vbox_layout)
         hbox_layout = Gtk.HBox()
-        vbox_layout.pack_start(hbox_layout, False, False, 0)
+        self.vbox_layout.pack_start(hbox_layout, False, False, 0)
         self.entry = Gtk.Entry()
         hbox_layout.add(self.entry)
         self.button = Gtk.Button("Start")
         hbox_layout.pack_start(self.button, False, False, 0)
         self.button.connect("clicked", self.start_stop)
-        self.movie_window = Gtk.DrawingArea()
-        vbox_layout.add(self.movie_window)
         self.window.show_all()
 
     def _init_gst_pipe(self):
@@ -36,8 +36,9 @@ class FilesrcViewer(GstPipeline):
         self.decoder = self.make_add_element("decodebin", "decoder")
         self.queue = self.make_add_element("queue", "vid_queue")
         self.converter = self.make_add_element("videoconvert", "converter")
-        self.videosink = self.make_add_element("autovideosink", "videosink")
-
+        self.videosink = self.make_add_element("gtksink", "videosink")
+        self.vbox_layout.add(self.videosink.props.widget)
+        self.videosink.props.widget.show()
         # connect element signals
         self.register_callback(self.decoder, "pad-added", self.decoder_pad_added)
 
