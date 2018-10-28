@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d2c3450-abd3-4c68-9de3-ee24e0979311" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/filesrc_viewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/filesrc_viewer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udp_video_sender.py" beforeDir="false" afterPath="$PROJECT_DIR$/udp_video_sender.py" afterDir="false" />
-    </list>
+    <list default="true" id="9d2c3450-abd3-4c68-9de3-ee24e0979311" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,7 @@
     <session id="543797570">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.opened" value="2" />
         </counts>
@@ -77,8 +73,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/udp_video_sender.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="100" column="11" lean-forward="true" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+                <state relative-caret-position="240">
+                  <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                     <marker date="1540404239412" expanded="true" signature="1183:1192" ph="..." />
@@ -123,7 +119,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/filesrc_viewer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
+                <state relative-caret-position="600">
                   <caret line="40" column="42" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
@@ -185,11 +181,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-264" />
-    <option name="y" value="128" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="495" />
+    <option name="y" value="221" />
     <option name="width" value="1398" />
-    <option name="height" value="992" />
+    <option name="height" value="964" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -321,15 +317,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="495" y="221" width="1398" height="964" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25538972" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34171596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37679425" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -394,7 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filesrc_viewer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="600">
           <caret line="40" column="42" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="42" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -415,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/udp_video_sender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="100" column="11" lean-forward="true" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+        <state relative-caret-position="240">
+          <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <marker date="1540404239412" expanded="true" signature="1183:1192" ph="..." />
