@@ -35,11 +35,20 @@ def run_audio_test():
 
 def run_udp_video_sender():
     global viewer
-    from udp_video_sender import UdpVideoSender
+    from udp_video_sender import UdpVideoSender, UdpVideoSenderAlt
     GObject.threads_init()
     Gst.init(None)
-    viewer = UdpVideoSender()
+    viewer = UdpVideoSenderAlt()
+    Gtk.main()
+
+def run_udp_video_receiver():
+    global viewer
+    from udp_video_receiver import UdpVideoReceiver, UdpVideoReceiverAlt
+    GObject.threads_init()
+    Gst.init(None)
+    viewer = UdpVideoReceiverAlt()
     Gtk.main()
 
 if __name__ == "__main__":
-    run_udp_video_sender()
+    #run_udp_video_sender()
+    run_udp_video_receiver()

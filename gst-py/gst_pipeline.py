@@ -37,7 +37,11 @@ class GstPipeline(object):
 
     def link_elements(self, src, sink):
         """ Links src-pad of src GstElement to sink-pad of sink GstElement. """
-        src.link(sink)
+        if not src.link(sink):
+            print("## link_elements")
+            print(" > could not link")
+            print("  > src", src.get_name())
+            print("  > sink", sink.get_name())
 
     def register_callback(self, gst_element, signal_name, function):
         """
