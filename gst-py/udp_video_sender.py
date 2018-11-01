@@ -8,7 +8,7 @@ from gst_pipeline import GstPipeline
 
 class UdpVideoSender(GstPipeline):
     def __init__(self):
-        super().__init__("Filesrc-Viewer")
+        super().__init__("Udp-Video-Sender")
         self._init_ui()
         self._init_gst_pipe()
 

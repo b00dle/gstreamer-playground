@@ -6,6 +6,7 @@ from gi.repository import Gst, GObject, Gtk, Gdk, GdkX11
 
 viewer = None
 
+
 def run_filesrc_viewer():
     global viewer
     from filesrc_viewer import FilesrcViewer
@@ -35,20 +36,23 @@ def run_audio_test():
 
 def run_udp_video_sender():
     global viewer
-    from udp_video_sender import UdpVideoSender, UdpVideoSenderAlt
+    from udp_video_sender import UdpVideoSender
     GObject.threads_init()
     Gst.init(None)
-    viewer = UdpVideoSenderAlt()
+    viewer = UdpVideoSender()
     Gtk.main()
+
 
 def run_udp_video_receiver():
     global viewer
-    from udp_video_receiver import UdpVideoReceiver, UdpVideoReceiverAlt
+    from udp_video_receiver import UdpVideoReceiver
     GObject.threads_init()
     Gst.init(None)
-    viewer = UdpVideoReceiverAlt()
+    viewer = UdpVideoReceiver()
     Gtk.main()
+
 
 if __name__ == "__main__":
     #run_udp_video_sender()
     run_udp_video_receiver()
+    #run_filesrc_viewer()
